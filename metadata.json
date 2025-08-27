@@ -1,0 +1,5 @@
+{
+  "name": "Nexify Landing Page",
+  "description": "A visually stunning React landing page demonstrating a fusion of modern web technologies including Framer Motion for animations, Vanta.js for 3D backgrounds, and Recharts for data visualization, all with a user-configurable settings panel.",
+  "requestFramePermissions": []
+}
