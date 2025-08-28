@@ -1,74 +1,24 @@
-````markdown name=README.md
-# Nexify Digital Studio – Dokonalý Landing Page
-
+# ✨ Nexify Digital Studio – Dokonalý Landing Page
 <div align="center">
-  <img width="1000" alt="Nexify Digital Studio Banner" src="[https://github.com/youh4ck3dme/nexifydigitalstudio/blob/f0b91a82c1e9f95c889765335df377f8ea1d9d93/nexify.png](https://github.com/youh4ck3dme/nexifydigitalstudio/edit/main/README.mdhttps://github.com/youh4ck3dme/nexifydigitalstudio/blob/main/nexify.png)" />
+
+![Node >=18](https://img.shields.io/badge/Node-%E2%89%A518-339933?logo=node.js&logoColor=white)
+![React](https://img.shields.io/badge/React-18%2B-61DAFB?logo=react&logoColor=222)
+![Vite](https://img.shields.io/badge/Vite-5%2B-646CFF?logo=vite&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-Strict-3178C6?logo=typescript&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-Utility--First-06B6D4?logo=tailwindcss&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer%20Motion-Animations-0055FF?logo=framer&logoColor=white)
+![ESLint](https://img.shields.io/badge/ESLint-Clean%20Code-4B32C3?logo=eslint&logoColor=white)
+![Prettier](https://img.shields.io/badge/Prettier-Formatted-F7B93E?logo=prettier&logoColor=222)
+![License](https://img.shields.io/badge/License-All%20Rights%20Reserved-black)
+
+![Stars](https://img.shields.io/github/stars/youh4ck3dme/nexifydigitalstudio?style=flat)
+![Issues](https://img.shields.io/github/issues/youh4ck3dme/nexifydigitalstudio)
+![Last Commit](https://img.shields.io/github/last-commit/youh4ck3dme/nexifydigitalstudio)
 </div>
 
-Moderný, pixel-perfect a interaktívny landing page pre digitálne štúdio **Nexify**. Tento projekt je postavený na **React**, **Vite**, **TypeScript**, **Framer Motion** a **TailwindCSS**. Vystihuje spojenie technológie, kreativity a dokonalého UX/UI dizajnu.
+<div align="center">
+  <img src="files/nexify.png" alt="Nexify Digital Studio Banner" width="1000" />
+</div>
 
 ---
-
-## 🌌 Čo je Nexify Studio?
-
-**Nexify Digital Studio** je inovatívne digitálne štúdio, ktoré sa zameriava na vytváranie moderných webových riešení a digitálnych produktov. Naším cieľom je poskytnúť klientom dokonalé nástroje a služby, ktoré kombinujú špičkové technológie, kreatívny dizajn a pútavé používateľské zážitky. Nexify Studio je váš partner na ceste od nápadu po realizáciu – rýchlo, efektívne a kvalitne.
-
----
-
-## 🚀 Rýchly štart
-
-**Požiadavky:**  
-- Node.js (>=18)  
-- npm
-
-**Spustenie lokálne:**
-```bash
-npm install
-npm run dev
-```
-
-Aplikácia bude bežať na [http://localhost:5173](http://localhost:5173) (alebo podľa výstupu v konzole).
-
----
-
-## 🌟 Kľúčové vlastnosti
-
-- **Pixel-perfect dizajn:** Každý detail je navrhnutý na maximálnu precíznosť.
-- **Animácie a efekty:** Použitie **Framer Motion** na interaktívne a pútavé pohyblivé prvky.
-- **Custom brand téma:** TailwindCSS s unikátnymi farbami a štýlovými komponentmi.
-- **Kompletný responsív design:** Prispôsobený pre všetky zariadenia.
-- **Moderný tech stack:** React, Vite, TypeScript a viac.
-
----
-
-## 🧑‍💻 Technológie
-
-- **React** – komponentová architektúra
-- **Vite** – extrémne rýchly dev server a build
-- **TypeScript** – typová bezpečnosť
-- **Framer Motion** – animácie a microinterakcie
-- **TailwindCSS** – utility-first styling, custom brand téma
-- **ESLint a Prettier** – čistý a udržiavateľný kód
-
----
-
-## 🧠 Filozofia
-
-> Sme kolektív digitálnych remeselníkov s vášňou pre posúvanie hraníc webového dizajnu a používateľského zážitku. Našou filozofiou je spájať špičkové technológie s umeleckou víziou a vytvárať tak nezabudnuteľné digitálne rozhrania.
-
----
-
-## 🌐 Deployment
-
-Projekt je pripravený na jednoduché nasadenie na ľubovoľný statický hosting (Vercel, Netlify, GitHub Pages, ...).
-
----
-
-## 📄 Licencia
-
-© Nexify, 2025. All rights reserved.
-
----
-
-**Pridaj sa k nám, alebo nás kontaktuj pre spoluprácu!**
-````
+(…zvyšok obsahu ponechaj presne ako vyššie…)
