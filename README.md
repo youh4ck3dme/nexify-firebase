@@ -16,7 +16,7 @@ View your app in AI Studio: https://ai.studio/apps/drive/1oFIxkzX6WGz0rSYtm_1XkV
 
 1. Install dependencies:
    `npm install`
-2. Set the `AIzaSyDHO7eo3a2UooCSN8fxGi3JwXyQ_bj0010` in [.env.local](.env.local) to your Gemini API key
+2. Set the `PRIVATE_KEY0` in [.env.local](.env.local) to your Gemini API key
 3. Run the app:
    `npm run dev`
 # nexifydigitalstudio
