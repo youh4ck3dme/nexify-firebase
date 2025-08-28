@@ -1,5 +1,5 @@
 # ✨ Nexify Digital Studio – Dokonalý Landing Page
-<<<<<<< HEAD
+
 <div align="center">
 
 ![Node >=18](https://img.shields.io/badge/Node-%E2%89%A518-339933?logo=node.js&logoColor=white)
@@ -15,15 +15,8 @@
 ![Stars](https://img.shields.io/github/stars/youh4ck3dme/nexifydigitalstudio?style=flat)
 ![Issues](https://img.shields.io/github/issues/youh4ck3dme/nexifydigitalstudio)
 ![Last Commit](https://img.shields.io/github/last-commit/youh4ck3dme/nexifydigitalstudio)
-</div>
 
-<div align="center">
-  <img src="files/nexify.png" alt="Nexify Digital Studio Banner" width="1000" />
 </div>
-
----
-(…zvyšok obsahu ponechaj presne ako vyššie…)
-=======
 
 <div align="center">
   <img src="files/nexify.png" alt="Nexify Digital Studio Banner" width="1000" />
@@ -114,4 +107,3 @@ Pripravené na jednoduché nasadenie na:
 🔗 [LinkedIn](#) • [Website](#) • [E-mail](#)  
 
 👉 **Pridaj sa k nám alebo nás kontaktuj pre spoluprácu!**
->>>>>>> d3cceafd61470418bd25f76c0d4dce83358f6acb
