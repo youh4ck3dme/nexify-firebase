@@ -2,7 +2,7 @@
 # Nexify Digital Studio – Dokonalý Landing Page
 
 <div align="center">
-  <img width="1000" alt="Nexify Digital Studio Banner" src="https://github.com/youh4ck3dme/nexifydigitalstudio/blob/f0b91a82c1e9f95c889765335df377f8ea1d9d93/nexify.png" />
+  <img width="1000" alt="Nexify Digital Studio Banner" src="[https://github.com/youh4ck3dme/nexifydigitalstudio/blob/f0b91a82c1e9f95c889765335df377f8ea1d9d93/nexify.png](https://github.com/youh4ck3dme/nexifydigitalstudio/edit/main/README.mdhttps://github.com/youh4ck3dme/nexifydigitalstudio/blob/main/nexify.png)" />
 </div>
 
 Moderný, pixel-perfect a interaktívny landing page pre digitálne štúdio **Nexify**. Tento projekt je postavený na **React**, **Vite**, **TypeScript**, **Framer Motion** a **TailwindCSS**. Vystihuje spojenie technológie, kreativity a dokonalého UX/UI dizajnu.
