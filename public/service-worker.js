@@ -1,10 +1,19 @@
-const CACHE_NAME = 'nexify-cache-v1';
+
+const CACHE_NAME = 'nexify-cache-v2';
 const OFFLINE_URL = '/offline.html';
 const toCache = [
   '/',
-  '/index.html',
-  '/nexify.png',
-  OFFLINE_URL
+  '/offline.html',
+  '/favicon.svg',
+  '/images/portfolio-1.svg',
+  '/images/portfolio-2.svg',
+  '/images/portfolio-3.svg',
+  '/images/portfolio-4.svg',
+  '/images/portfolio-5.svg',
+  '/images/portfolio-6.svg',
+  '/images/team-1.svg',
+  '/images/team-2.svg',
+  '/images/team-3.svg'
 ];
 
 self.addEventListener('install', event => {
