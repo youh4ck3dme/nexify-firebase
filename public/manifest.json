@@ -1,16 +1,16 @@
 {
   "name": "Nexify Digital Studio",
   "short_name": "Nexify",
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#111827",
-  "description": "Moderný, pixel-perfect a interaktívny landing page pre digitálne štúdio Nexify.",
+  "background_color": "#0D001F",
+  "theme_color": "#0D001F",
   "icons": [
-    {
-      "src": "/nexify.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }
+    { "src": "/icon-16x16.png", "sizes": "16x16", "type": "image/png" },
+    { "src": "/icon-32x32.png", "sizes": "32x32", "type": "image/png" },
+    { "src": "/icon-180x180.png", "sizes": "180x180", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/icon-192x192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/icon-512x512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png", "purpose": "any" }
   ]
 }
