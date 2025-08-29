@@ -1,0 +1,16 @@
+{
+  "name": "Nexify Digital Studio",
+  "short_name": "Nexify",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#111827",
+  "description": "Moderný, pixel-perfect a interaktívny landing page pre digitálne štúdio Nexify.",
+  "icons": [
+    {
+      "src": "/nexify.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
