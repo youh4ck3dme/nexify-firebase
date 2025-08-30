@@ -1,67 +1,46 @@
 import React from 'react';
-// FIX: Import Variants type to fix TypeScript error.
-import { motion, Variants } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useSettings } from '../../hooks/useSettings';
 import AnimatedSection from '../ui/AnimatedSection';
+import { projectsData } from '../../data/projects'; 
+import Link from '../../routing/Link';
 
-const data = [
-  { name: 'Jan', animations: 80, interactions: 48 }, // values as percentages
-  { name: 'Feb', animations: 60, interactions: 28 },
-  { name: 'Mar', animations: 40, interactions: 98 },
-  { name: 'Apr', animations: 55, interactions: 78 },
-  { name: 'May', animations: 38, interactions: 96 },
-  { name: 'Jun', animations: 48, interactions: 76 },
-];
-
-const Bar: React.FC<{ value: number; color: string; }> = ({ value, color }) => {
+const ProjectCard: React.FC<{ project: typeof projectsData[0] }> = ({ project }) => {
   const { settings } = useSettings();
-  // FIX: Explicitly type variants with Variants and use 'as const' for the cubic-bezier
-  // ease array to ensure it's inferred as a tuple, not number[], fixing the type error.
-  const barVariants: Variants = {
-    hidden: { height: '0%' },
-    visible: { height: `${value}%`, transition: { duration: 1, ease: [0.25, 1, 0.5, 1] as const, delay: 0.2 } },
+
+  const cardVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
   };
 
   return (
-    <div className="relative w-full h-full bg-brand-surface/50 flex items-end rounded-t-md overflow-hidden">
-      <motion.div
-        className={`w-full`}
-        style={{ backgroundColor: color }}
-        variants={settings.animations ? barVariants : {}}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.8 }}
-      />
-    </div>
+    <motion.div
+      className="bg-brand-surface rounded-lg overflow-hidden shadow-lg border border-brand-primary/20 hover:border-brand-primary/50 transition-all duration-300"
+      variants={settings.animations ? cardVariants : {}}
+    >
+      <img src={project.imageUrl} alt={project.title} className="w-full h-56 object-cover" />
+      <div className="p-6">
+        <p className="text-sm text-brand-primary font-bold">{project.category}</p>
+        <h3 className="text-xl text-brand-text font-semibold mt-1 mb-2">{project.title}</h3>
+        <p className="text-brand-text-muted text-sm mb-4">{project.description}</p>
+        <Link href={project.projectUrl} className="text-brand-primary font-bold hover:underline">
+          Zobraziť Detail
+        </Link>
+      </div>
+    </motion.div>
   );
 };
 
 const ProjectsSection: React.FC = () => {
   return (
-    <AnimatedSection id="projects" className="bg-brand-surface/50">
+    <AnimatedSection id="projects">
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-        Project <span className="text-brand-secondary">Analytics</span>
+        Naše <span className="text-brand-secondary">Projekty</span>
       </h2>
-      <div className="w-full h-96 p-6 bg-brand-surface rounded-lg border border-brand-primary/20 shadow-lg flex items-end justify-around gap-4 md:gap-6">
-        {data.map((item) => (
-          <div key={item.name} className="flex flex-col items-center h-full flex-1">
-            <div className="flex items-end h-full w-full gap-1.5">
-              <Bar value={item.animations} color="#00F5FF" />
-              <Bar value={item.interactions} color="#FF00C7" />
-            </div>
-            <span className="text-sm font-semibold text-brand-text-muted mt-3">{item.name}</span>
-          </div>
+      <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+        {projectsData.map((project) => (
+          <ProjectCard key={project.id} project={project} />
         ))}
-      </div>
-      <div className="flex justify-center mt-6 space-x-6 text-sm">
-        <div className="flex items-center">
-          <div className="w-3 h-3 rounded-sm bg-[#00F5FF] mr-2"></div>
-          <span className="text-brand-text-muted">Animations</span>
-        </div>
-        <div className="flex items-center">
-          <div className="w-3 h-3 rounded-sm bg-[#FF00C7] mr-2"></div>
-          <span className="text-brand-text-muted">Interactions</span>
-        </div>
       </div>
     </AnimatedSection>
   );

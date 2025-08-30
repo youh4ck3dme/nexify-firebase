@@ -9,11 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "react-dom": "^19.1.1",
-    "react": "^19.1.1",
     "framer-motion": "^12.23.12",
-    "react-hot-toast": "^2.6.0",
-    "lottie-react": "^2.4.0"
+    "lottie-react": "^2.4.0",
+    "picomatch": "^4.0.3",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-hot-toast": "^2.6.0"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",

@@ -1,4 +1,4 @@
-# ✨ Nexify Digital Studio – Dokonalý Landing Page
+# ✨ Nexify Digital Studio – Ultimate Landing Page
 
 <div align="center">
 
@@ -12,98 +12,80 @@
 ![Prettier](https://img.shields.io/badge/Prettier-Formatted-F7B93E?logo=prettier&logoColor=222)
 ![License](https://img.shields.io/badge/License-All%20Rights%20Reserved-black)
 
-![Stars](https://img.shields.io/github/stars/youh4ck3dme/nexifydigitalstudio?style=flat)
-![Issues](https://img.shields.io/github/issues/youh4ck3dme/nexifydigitalstudio)
-![Last Commit](https://img.shields.io/github/last-commit/youh4ck3dme/nexifydigitalstudio)
-
 </div>
 
 <div align="center">
-  <img src="files/nexify.png" alt="Nexify Digital Studio Banner" width="1000" />
+  <a href="https://mega-pwa-77105.web.app" target="_blank">
+    <img src="https://img.shields.io/badge/Live%20Demo-Firebase-FFCA28?style=for-the-badge&logo=firebase" alt="Live Demo"/>
+  </a>
 </div>
 
 ---
 
-🌌 **Moderný, pixel-perfect a interaktívny landing page** pre digitálne štúdio **Nexify**.  
-Postavený na **React**, **Vite**, **TypeScript**, **Framer Motion** a **TailwindCSS**.  
-Kombinujeme **technológiu, kreativitu a dokonalý UX/UI dizajn**.
+## 🧠 Philosophy
+
+> We are **digital craftsmen** with a passion for pushing the boundaries of web design.
+> We connect **technology** and **artistic vision** to create **unforgettable digital interfaces**.
 
 ---
 
-## 🌌 Čo je Nexify Studio?
+## 🚀 Features
 
-**Nexify Digital Studio** je inovatívne digitálne štúdio zamerané na tvorbu moderných webových riešení a digitálnych produktov.  
-Naším cieľom je poskytnúť klientom **dokonalé nástroje a služby**, ktoré spájajú:
-
-- 🎨 kreatívny dizajn  
-- ⚡ špičkové technológie  
-- 🤝 pútavé používateľské zážitky  
-
-➡️ Nexify je **váš partner od nápadu po realizáciu** – rýchlo, efektívne a kvalitne.
+*   **Modern Tech Stack:** Built with React, Vite, and TypeScript for a fast and robust development experience.
+*   **Stunning Animations:** Smooth and beautiful animations powered by Framer Motion.
+*   **Responsive Design:** Fully responsive layout that looks great on all devices.
+*   **PWA Ready:** Can be installed as a Progressive Web App for an offline, native-like experience.
+*   **Clean Code:** Follows best practices with ESLint and Prettier to ensure code quality.
 
 ---
 
-## 🚀 Rýchly štart
+## ⚡ Getting Started
 
-### ✅ Požiadavky
-- Node.js (>=18)  
-- npm
+### Prerequisites
 
-### ▶️ Spustenie lokálne
+*   Node.js (v18 or higher)
+*   npm or yarn
+
+### Installation
+
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/your-username/your-repo-name.git
+    ```
+2.  Install dependencies:
+    ```bash
+    npm install
+    ```
+
+### Running the Development Server
+
 ```bash
-npm install
 npm run dev
 ```
 
-Aplikácia pobeží na 👉 [http://localhost:5173](http://localhost:5173)
+### Building for Production
 
----
-
-## 🌟 Kľúčové vlastnosti
-
-- 🎯 **Pixel-perfect dizajn** – každý detail je doladený  
-- 🌀 **Interaktívne animácie** cez Framer Motion  
-- 🎨 **Custom brand téma** – TailwindCSS s unikátnymi farbami  
-- 📱 **Kompletná responzivita** – od mobilu po 4K displeje  
-- ⚡ **Moderný tech stack** – React + Vite + TS  
-
----
-
-## 🧑‍💻 Použité technológie
-
-| Tech | Popis |
-|------|-------|
-| ⚛️ React | komponentová architektúra |
-| ⚡ Vite | extrémne rýchly build a dev server |
-| 🔐 TypeScript | typová bezpečnosť |
-| 🌀 Framer Motion | animácie a microinterakcie |
-| 🎨 TailwindCSS | utility-first styling |
-| 🧹 ESLint & Prettier | čistý, udržiavateľný kód |
-
----
-
-## 🧠 Filozofia
-
-> Sme **digitálni remeselníci** s vášňou posúvať hranice webového dizajnu.  
-> Prepájame **technológie** a **umeleckú víziu**, aby sme vytvárali **nezabudnuteľné digitálne rozhrania**.
+```bash
+npm run build
+```
 
 ---
 
 ## 🌐 Deployment
 
-Pripravené na jednoduché nasadenie na:  
-**Vercel**, **Netlify**, **GitHub Pages** alebo akýkoľvek statický hosting.
+Ready for easy deployment to:
+**Vercel**, **Netlify**, **GitHub Pages**, **Firebase Hosting**, or any static hosting service.
 
 ---
 
-## 📄 Licencia
+## 📄 License
 
-© **Nexify**, 2025 – All rights reserved.  
+© **Nexify**, 2025 – All rights reserved.
 
 ---
 
-## 📬 Kontakt & Spolupráca
+## 📬 Contact & Collaboration
 
-🔗 [LinkedIn](#) • [Website](#) • [E-mail](#)  
+🔗 [LinkedIn](#) • [Website](#) • [E-mail](#)
 
-👉 **Pridaj sa k nám alebo nás kontaktuj pre spoluprácu!**
+👉 **Join us or contact us for collaboration!**
