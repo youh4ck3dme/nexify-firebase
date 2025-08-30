@@ -4,9 +4,11 @@ import { useSettings } from '../../hooks/useSettings';
 import AnimatedSection from '../ui/AnimatedSection';
 import { projectsData } from '../../data/projects'; 
 import Link from '../../routing/Link';
+import { projectVisuals } from '../projects/visuals';
 
 const ProjectCard: React.FC<{ project: typeof projectsData[0] }> = ({ project }) => {
   const { settings } = useSettings();
+  const VisualComponent = projectVisuals[project.id];
 
   const cardVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -15,15 +17,15 @@ const ProjectCard: React.FC<{ project: typeof projectsData[0] }> = ({ project })
 
   return (
     <motion.div
-      className="bg-brand-surface rounded-lg overflow-hidden shadow-lg border border-brand-primary/20 hover:border-brand-primary/50 transition-all duration-300"
+      className="bg-brand-surface rounded-lg overflow-hidden shadow-lg border border-brand-primary/20 hover:border-brand-primary/50 transition-all duration-300 flex flex-col"
       variants={settings.animations ? cardVariants : {}}
     >
-      <img src={project.imageUrl} alt={project.title} className="w-full h-56 object-cover" />
-      <div className="p-6">
+      {VisualComponent ? <VisualComponent /> : <div className="w-full h-56 bg-gray-900/50"></div>}
+      <div className="p-6 flex-grow flex flex-col">
         <p className="text-sm text-brand-primary font-bold">{project.category}</p>
         <h3 className="text-xl text-brand-text font-semibold mt-1 mb-2">{project.title}</h3>
-        <p className="text-brand-text-muted text-sm mb-4">{project.description}</p>
-        <Link href={project.projectUrl} className="text-brand-primary font-bold hover:underline">
+        <p className="text-brand-text-muted text-sm mb-4 flex-grow">{project.description}</p>
+        <Link href={project.projectUrl} className="text-brand-primary font-bold hover:underline self-start">
           Zobraziť Detail
         </Link>
       </div>

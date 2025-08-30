@@ -2,35 +2,62 @@ import React, { createContext, useState, useEffect, useMemo, useCallback } from 
 
 interface RouterContextType {
   path: string;
+  params: { [key: string]: string };
 }
 
 export const RouterContext = createContext<RouterContextType | undefined>(undefined);
 
-// Helper function to get the current path from the hash
-const getCurrentPath = () => {
-  const hash = window.location.hash || '#/';
-  // Handles both `#/about-us` and `#/#portfolio`
-  // In both cases, the primary path is the part after the first '#' and before the second '#'
-  return hash.substring(1).split('#')[0] || '/';
+// Helper to parse path and extract params
+const parsePath = (path: string, route: string): { match: boolean; params: { [key: string]: string } } => {
+  const params: { [key: string]: string } = {};
+  const pathParts = path.split('/').filter(p => p);
+  const routeParts = route.split('/').filter(p => p);
+
+  if (pathParts.length !== routeParts.length) {
+    return { match: false, params: {} };
+  }
+
+  const match = routeParts.every((part, i) => {
+    if (part.startsWith(':')) {
+      params[part.substring(1)] = pathParts[i];
+      return true;
+    }
+    return part === pathParts[i];
+  });
+
+  return { match, params };
 };
 
+
+const getCurrentPath = () => window.location.hash.substring(1) || '/';
+
 export const Router: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [path, setPath] = useState(getCurrentPath());
+  const [rawPath, setRawPath] = useState(getCurrentPath());
 
   const handleHashChange = useCallback(() => {
-    setPath(getCurrentPath());
+    setRawPath(getCurrentPath());
   }, []);
 
   useEffect(() => {
     window.addEventListener('hashchange', handleHashChange);
-    // Also set the initial path in case the page is loaded with a hash
-    handleHashChange();
-    return () => {
-      window.removeEventListener('hashchange', handleHashChange);
-    };
+    return () => window.removeEventListener('hashchange', handleHashChange);
   }, [handleHashChange]);
 
-  const value = useMemo(() => ({ path }), [path]);
+  const { path, params } = useMemo(() => {
+    // This is a simplified logic. A real router would iterate over a list of routes.
+    // For this app, we assume a structure like /projects/:slug
+    const projectRoute = '/projects/:slug';
+    const { match, params } = parsePath(rawPath, projectRoute);
+
+    if (match) {
+      return { path: '/projects/:slug', params };
+    } 
+
+    return { path: rawPath, params: {} };
+
+  }, [rawPath]);
+
+  const value = useMemo(() => ({ path, params }), [path, params]);
 
   return (
     <RouterContext.Provider value={value}>
