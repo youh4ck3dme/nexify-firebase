@@ -3,6 +3,8 @@ import React, { createContext, useState, useEffect, useMemo, useCallback } from 
 interface RouterContextType {
   path: string;
   params: { [key: string]: string };
+  navigate: (newPath: string) => void;
+  goBack: () => void;
 }
 
 export const RouterContext = createContext<RouterContextType | undefined>(undefined);
@@ -44,20 +46,26 @@ export const Router: React.FC<{ children: React.ReactNode }> = ({ children }) =>
   }, [handleHashChange]);
 
   const { path, params } = useMemo(() => {
-    // This is a simplified logic. A real router would iterate over a list of routes.
-    // For this app, we assume a structure like /projects/:slug
     const projectRoute = '/projects/:slug';
     const { match, params } = parsePath(rawPath, projectRoute);
 
     if (match) {
       return { path: '/projects/:slug', params };
-    } 
+    }
 
     return { path: rawPath, params: {} };
 
   }, [rawPath]);
 
-  const value = useMemo(() => ({ path, params }), [path, params]);
+  const navigate = useCallback((newPath: string) => {
+    window.location.hash = newPath;
+  }, []);
+
+  const goBack = useCallback(() => {
+    window.history.back();
+  }, []);
+
+  const value = useMemo(() => ({ path, params, navigate, goBack }), [path, params, navigate, goBack]);
 
   return (
     <RouterContext.Provider value={value}>

@@ -1,5 +1,5 @@
 
-const CACHE_NAME = 'nexify-cache-v3';
+const CACHE_NAME = 'nexify-cache-v4';
 const OFFLINE_URL = '/offline.html';
 const ASSETS_TO_CACHE = [
   '/',
@@ -20,7 +20,18 @@ const ASSETS_TO_CACHE = [
   '/images/portfolio-6.svg',
   '/images/team-1.svg',
   '/images/team-2.svg',
-  '/images/team-3.svg'
+  '/images/team-3.svg',
+  '/about',
+  '/about-us',
+  '/blog',
+  '/brief',
+  '/career',
+  '/contact',
+  '/digital-universe',
+  '/nexify-one',
+  '/pricing',
+  '/projects',
+  '/services',
 ];
 
 self.addEventListener('install', event => {
